@@ -1,7 +1,8 @@
-#pragma once
+﻿#pragma once
 #include "Novice.h"
 #include "Vector2.h"
 #include <vector>
+#include "Color.h"
 
 class Object
 {
@@ -11,10 +12,17 @@ protected:
 	float radius_;
 	int coolDown_;
 	bool isAlive_;
+	//リソース類
+	int gh_;
+
+	//int blendColor_;
+
 
 public:
 	Object();
 	~Object();
+
+	Color* color_;
 
 	virtual void Init() = 0;
 	virtual void Update() = 0;

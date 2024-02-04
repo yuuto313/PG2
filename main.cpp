@@ -17,7 +17,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	char keys[256] = {0};
 	char preKeys[256] = {0};
 
-	manager = new IManager(keys);
+	manager = new IManager(keys,preKeys);
 	manager->scene = new Title(manager);
 
 	// ウィンドウの×ボタンが押されるまでループ

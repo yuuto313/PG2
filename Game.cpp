@@ -67,5 +67,5 @@ void Game::Draw()
 	Novice::DrawBox(0, 0, 1280, 720, 0.f, BLUE, kFillModeSolid);
 	player->Draw();
 	enemy->Draw();
-	
+
 }

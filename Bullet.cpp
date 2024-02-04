@@ -7,6 +7,7 @@ Bullet::Bullet(Vector2 pos)
 	radius_ = 5;
 	isAlive_ = false;
 	coolDown_ = 0;
+	//blendColor_ = {};
 
 	isShot_ = true;
 }

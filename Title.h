@@ -4,6 +4,7 @@ class Title:
 	public IScene
 {
 public:
+
 	Title(IManager* pManager);
 	~Title();
 

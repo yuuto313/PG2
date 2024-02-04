@@ -7,6 +7,10 @@ Object::Object()
 	radius_ = {};
 	isAlive_ = {};
 	coolDown_ = {};
+
+	//blendColor_ = {};
+	gh_ = {};
+
 }
 
 Object::~Object()
