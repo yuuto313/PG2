@@ -4,6 +4,11 @@
 GameOver::GameOver(IManager* pManager):IScene(pManager)
 {
 	gh_ = Novice::LoadTexture("./Resources/game_Failed.png");
+
+	
+	//color_->Init();
+
+	
 }
 
 GameOver::~GameOver()
@@ -16,6 +21,7 @@ void GameOver::Update()
 		manager_->scene = new Game(manager_);
 		delete this;
 	}
+	//color_->SetColor(0xDC, 0x14, 0x3C, 0x00);
 }
 
 void GameOver::Draw()
