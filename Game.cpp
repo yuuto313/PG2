@@ -6,6 +6,8 @@ Game::Game(IManager* pManager) :IScene(pManager)
 {
 	player = new Player();
 	enemy = new Enemy();
+	//color_ ->Init();
+
 
 	range1_ = {};
 	distance1_ = {};
@@ -14,6 +16,10 @@ Game::Game(IManager* pManager) :IScene(pManager)
 	range2_ = {};
 	distance2_ = {};
 	radius2_ = {};
+
+	
+
+	
 }
 
 Game::~Game()
@@ -22,6 +28,7 @@ Game::~Game()
 
 void Game::Update()
 {
+	//color_->SetColor(0x4B, 0x00, 0x8B, 0x00);
 	player->Update(manager_->GetKey());
 	enemy->Update();
 

@@ -1,5 +1,6 @@
-#pragma once
+﻿#pragma once
 class Color
+	//未完成
 {
 private:
 	unsigned int red_;
@@ -11,12 +12,11 @@ public:
 	Color();
 	~Color();
 
-	unsigned int GetColor()const;
+	void Init();
 
-	Color* SetColor(int red, int green, int blue, int alpha);
-	Color* SetRed(int red);
-	Color* SetGreen(int green);
-	Color* SetBlue(int blue);
-	Color* SetAlpha(int alpha);
+	unsigned int GetColor();
+
+	void SetColor(int red, int green, int blue, int alpha);
+
 };
 
