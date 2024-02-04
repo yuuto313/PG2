@@ -79,6 +79,9 @@ void Player::Init()
 	//blendColor_ = {};
 
 	coolDown_ = 0;
+
+	gh_ = Novice::LoadTexture("./Resources/game_Player.png");
+	
 }
 
 void Player::Update(char *keys)
@@ -97,6 +100,7 @@ void Player::Draw()
 		(*itr)->Draw();
 	}
 	if (isAlive_) {
-		Novice::DrawEllipse((int)pos_.x, (int)pos_.y, (int)radius_, (int)radius_, 0.f, WHITE, kFillModeSolid);
+		//Novice::DrawEllipse((int)pos_.x, (int)pos_.y, (int)radius_, (int)radius_, 0.f, WHITE, kFillModeSolid);
+		Novice::DrawSprite((int)pos_.x - 32, (int)pos_.y - 32, gh_, 1.f, 1.f, 0.f, 0xFFFFFFFF);
 	}
 }

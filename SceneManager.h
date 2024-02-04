@@ -25,15 +25,16 @@ public:
 class IManager
 {
 	char* key;
-
+	char* preKey;
 
 public:
 	IScene* scene;
 
-	IManager(char* pKey) { key = pKey; };
+	IManager(char* pKey,char *pPreKey) { key = pKey,preKey=pPreKey; };
 	~IManager() { delete scene; };
 
 	char* GetKey() { return key; };
+	char* GetPreKey() { return preKey; };
 
 	void Update() { scene->Update(); };
 	void Draw() { scene->Draw(); };

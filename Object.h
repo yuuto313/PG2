@@ -13,9 +13,9 @@ protected:
 	int coolDown_;
 	bool isAlive_;
 	//リソース類
+	int gh_;
 
-
-	int blendColor_;
+	//int blendColor_;
 
 
 public:

@@ -12,7 +12,7 @@ Clear::~Clear()
 
 void Clear::Update()
 {
-	if (manager_->GetKey()[DIK_RETURN]) {
+	if (manager_->GetKey()[DIK_RETURN] && !manager_->GetPreKey()[DIK_RETURN]) {
 		manager_->scene = new Title(manager_);
 		delete this;
 	}

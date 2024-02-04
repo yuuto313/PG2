@@ -16,7 +16,7 @@ Title::~Title()
 
 void Title::Update()
 {
-	if (manager_->GetKey()[DIK_RETURN]) {
+	if (manager_->GetKey()[DIK_RETURN] && !manager_->GetPreKey()[DIK_RETURN]) {
 		manager_->scene = new Game(manager_);
 		delete this;
 	}
