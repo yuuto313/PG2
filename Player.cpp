@@ -76,6 +76,7 @@ void Player::Init()
 	vel_ = { 0,0 };
 	radius_ = 10;
 	isAlive_ = true;
+	//blendColor_ = {};
 
 	coolDown_ = 0;
 }

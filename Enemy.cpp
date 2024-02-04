@@ -50,7 +50,8 @@ void Enemy::Init()
 	vel_ = { 8,0 };
 	radius_ = 25;
 	isAlive_ = true;
-
+	//blendColor_ = {};
+	
 	coolDown_ = 0;
 }
 

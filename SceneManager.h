@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include "Novice.h"
-
+#include "Color.h"
 
 //シーンの基底クラス
 class IManager;
@@ -8,6 +8,10 @@ class IScene
 {
 protected:
 	IManager* manager_;
+	Color* color_;
+
+	int gh_ = {};
+	int gh2_ = Novice::LoadTexture("./Resources/game_Enter.png");
 
 public:
 	IScene(IManager* pManager) { manager_ = pManager; };
